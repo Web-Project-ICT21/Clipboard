@@ -15,3 +15,11 @@ CopyTxT is a simple web application that allows users to save and manage text cl
 - Clips will be automatically deleted after the specified expiration time.
 
 Feel free to modify and improve the code as needed for your own use!
+5. To delete a clip, enter its name and click the "Delete Clip" button.
+6. To copy the text of a clip to your clipboard, click the "CopyTxT" button.
+
+### Notes
+- Clips are stored locally using the browser's localStorage.
+- Clips will be automatically deleted after the specified expiration time.
+
+Feel free to modify and improve the code as needed for your own use!

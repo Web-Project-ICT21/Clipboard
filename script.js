@@ -69,3 +69,35 @@ function copyToClipboard() {
 
     // Append the textarea to the body
     document.body.appendChild(tempTextarea);
+    
+    // Select the text in the textarea
+    tempTextarea.select();
+
+    // Execute the copy command
+    document.execCommand("copy");
+
+    // Remove the temporary textarea
+    document.body.removeChild(tempTextarea);
+
+    alert("Text copied to clipboard!");
+}
+
+
+function checkAndDeleteExpiredClips() {
+    let currentTime = new Date().getTime(); // Get current time in milliseconds
+
+    for (let clipName in savedClips) {
+        let clip = savedClips[clipName];
+        if (clip.deleteTime > 0) {
+            let savedTime = clip.saveTime;
+            let elapsedTime = (currentTime - savedTime) / (1000 * 60); // Convert milliseconds to minutes
+            if (elapsedTime >= clip.deleteTime) {
+                delete savedClips[clipName];
+            }
+        }
+    }
+
+    localStorage.setItem('savedClips', JSON.stringify(savedClips));
+    setTimeout(checkAndDeleteExpiredClips, 60000); // Check for expired clips every minute
+}
+

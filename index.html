@@ -14,3 +14,19 @@
         <input type="text" id="clipname1" placeholder="Enter Clip Name" style="height: 20px;">
         <textarea id="clipboard"></textarea><br>
         <div class="save">
+<button onclick="deleteClip()" style="background-color: #38b1ac; width: 600px;">Delete Clip</button>
+            <button onclick="saveToClipboard()" style="background-color: #58a4dd; width: 850px;">Save To CopyTxT</button>
+        </div>    
+        <div class="container2">
+            <div class="clip">
+                <input type="text" id="clipname" placeholder="Enter Your Retrive Id..." style="height: 27px; width: 1400px;">
+            </div>
+            <div class="load">
+                <button onclick="loadFromClipboard()">
+                    &#x2192;
+                </button>
+            </div>
+        </div>
+        <div class="delete-options">
+            <select id="delete-time" style="background-color: #38b1ac; height: 30px; border-radius: 4%; color: white;">
+                <option value="" disabled selected hidden>&#x1F551; Expire in</option>

@@ -1,1 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/random/1920x1080'); 
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
 
+.container {
+    display: block;
+    position: relative;
+    top: -7%;
+    width: 95%;
+    height: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+input{
+    margin-left: 237px;
+    margin-bottom: 10px;
+    position: absolute;
+    display:block;
+    top: 20px;
+    left: -216px;
+    border-radius: 5px;
+    border-color: #58a4dd;
+    width: 250px;
+}
+
+textarea {
+    width: 94.5%;
+    height: 55%;
+    position: absolute;
+    display:block;
+    margin-bottom: 20px;
+    padding: 20px;
+    top: 65px;
+    border: 3px solid #58a4dd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}

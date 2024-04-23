@@ -97,3 +97,57 @@ button:active {
         opacity: 0;
     }
 }
+.alert {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    animation: slideIn 0.5s ease;
+}
+
+.hidden {
+    animation: fadeOut 0.5s ease forwards;
+    display: none;
+}
+
+.page-name{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    display: block;
+    margin: auto;
+    padding-left: 50px;
+    width: 100%;
+    color: dodgerblue;
+}
+
+.container2 {
+    display: block;
+    position: fixed;
+    top: 75.5%;
+    background-color: white;
+    width: 97.5%;
+    height: 10%;
+    left: 1%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.load{
+    position: fixed;
+    top: 78.2%;
+    right: 43px;
+}
+
+.delete-options{
+    position: fixed;
+    top: 17.3%;
+    right: 140px;
+}
+.copy{
+    position: fixed;
+    top: 17.3%;
+    right: 45px;
+}
